@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--Excercise: 
+1-Add head section, and then add a title "my JavaScript Page" to it.
+2-Add a second button to the body which says "Change the Title"
+3-When you click on this button, the title shpould change to "generate Tiltle"
+-->
+<html>
+    <head></head>
+    <body>
+        <h1>My first JavaScript Example</h1>
+        <img src="..\graph1.png" width="500" alt="Add your favorite image">
+        <br>
+        
+        <br>
+        <p>Javascript can change the content of an HTML element</p>
+        <button id="but1" type=""button" onclick="myFunction()">Click Me!</button>
+        <p id="demo">This is a demonstartionm of how js can change a text.</p>
+        <title>My JavaScript page</title>
+        <button id="titleButton" onclick="titlechanging()">Click2changeTitle!</button>
+        <button id="JokeButton" onclick="jokeappearing()">Request a Joke!</button>
+        <script>
+            //this function is called when you click the button
+            function myFunction(){
+                document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                document.getElementById("but1").textContent = "Click me again!"
+                //document.title = 
+            }
+            let clickCount = 0; //a global variable to keep track of how many time clicked
+            function titlechanging(){
+                clickCount = clickCount + 1;
+                document.title = "Clicked " + clickCount + " times!";
+            }
+            function jokeappearing(){
+                //pops up un alert with a Joke or funny message
+                alert("what is orange and sounds like a carrot? A parrot!")
+                
+        
+        
+            }
+            
+        </script>
+
+    </body>
+</html>
